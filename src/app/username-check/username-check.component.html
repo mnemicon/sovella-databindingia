@@ -1,0 +1,7 @@
+<p>username-check works!</p>
+<label>Muuttuja userName </label>
+<input type="text" [(ngModel)]="userName">
+<p>Tässä näkyy kohta käyttäjä: {{ userName }}</p>
+<button 
+[disabled] = "!allowUserNameReset" 
+(click)="onResetUserName()">Resetoi username-muuttuja</button>
