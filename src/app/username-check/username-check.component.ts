@@ -6,24 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./username-check.component.css']
 })
 export class UsernameCheckComponent implements OnInit {
+
   userName = '';
-  allowUserNameReset: boolean = false;
+  //allowUserNameReset: boolean = false;
 
   constructor() { 
-    if (this.userName.length > 0) {
-      this.allowUserNameReset = true;
+    //if (this.userName.length > 0) {
+      //this.allowUserNameReset = true;
     }
-  }
 
   ngOnInit(): void {
   }
 
-  onUpdateUserName(event: Event) {
-    this.userName = (<HTMLInputElement>event.target).value;
+  onCheckUserName() {
+    this.userName = '';
   }
-
-  onResetUserName() {
-    this.userName = ''; 
-  }
-
 }
+
+
+/*  
+    onUpdateUserName(event: Event) {
+      this.userName = (<HTMLInputElement>event.target).value;
+  }
+
+    onResetUserName() {
+      this.userName = ''; 
+  }
+}
+*/

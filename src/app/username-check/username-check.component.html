@@ -1,7 +1,14 @@
+<section>
+    <label>Anna käyttäjätunnus</label>
+    <input type="text" [(ngModel)]="userName" />
+    <p class="ptag"> {{ userName }} </p>
+    <button class="btn btn-primary" [disabled]="userName === ''" (click)="onCheckUserName()">Tyhjennä kenttä</button>
+</section>
+
+
+<!-- EKA YRITYS:
 <p>username-check works!</p>
 <label>Muuttuja userName </label>
 <input type="text" [(ngModel)]="userName">
 <p>Tässä näkyy kohta käyttäjä: {{ userName }}</p>
-<button 
-[disabled] = "!allowUserNameReset" 
-(click)="onResetUserName()">Resetoi username-muuttuja</button>
+<button [disabled] = "!allowUserNameReset" (click)="onResetUserName()"> Resetoi username-muuttuja</button> -->
